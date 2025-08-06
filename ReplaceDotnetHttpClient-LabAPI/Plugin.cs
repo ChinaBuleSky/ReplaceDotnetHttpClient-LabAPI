@@ -1,5 +1,4 @@
-﻿using System;
-using LabApi.Features.Console;
+﻿using LabApi.Features.Console;
 using LabApi.Loader.Features.Plugins;
 
 namespace ReplaceDotnetHttpClient_LabAPI

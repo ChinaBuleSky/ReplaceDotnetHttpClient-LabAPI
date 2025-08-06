@@ -1,7 +1,4 @@
-using System;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Reflection;
 using System.Security.Authentication;
 
@@ -21,7 +18,7 @@ public static class HttpExtensions
         var attr = typeof(FieldInfo).GetField("m_fieldAttributes", BindingFlags.NonPublic | BindingFlags.Instance);
         if (attr != null)
         {
-            var attrs = (FieldAttributes)attr.GetValue(field);
+            var attrs = (FieldAttributes)attr.GetValue(field)!;
             attr.SetValue(field, attrs & ~FieldAttributes.InitOnly);
         }
 
