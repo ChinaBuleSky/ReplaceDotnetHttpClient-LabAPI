@@ -21,6 +21,7 @@ namespace ReplaceDotnetHttpClient_LabAPI
 
         public override void Disable()
         {
+            HttpExtensions.ResetHttpClient();
         }
     }
 }
