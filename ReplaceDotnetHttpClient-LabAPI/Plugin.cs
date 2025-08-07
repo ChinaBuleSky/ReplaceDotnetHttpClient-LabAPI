@@ -5,9 +5,9 @@ namespace ReplaceDotnetHttpClient_LabAPI
 {
     public class ReplaceDotnetHttpClient : Plugin<Config>
     {
-        public override string Name { get; } = "ReplaceDotnetHttpClient";
-        public override string Description { get; } = "替换SCPSL的httpclient以使用系统代理.";
-        public override string Author { get; } = "The_BlueSky";
+        public override string Name => "ReplaceDotnetHttpClient";
+        public override string Description => "Replace SCPSL's httpclient to use system proxy.";
+        public override string Author => "The_BlueSky";
         public override Version Version { get; } = new(1, 0, 0);
         public override Version RequiredApiVersion { get; } = new();
 
